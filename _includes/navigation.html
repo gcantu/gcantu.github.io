@@ -1,0 +1,21 @@
+<nav class="navbar navbar-secondary fixed-top navbar-toggleable-md">
+    <div class="container mx-0 mx-sm-auto">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarLightSupportedContent" aria-controls="navbarLightSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button>
+        <!-- logo -->
+        <a class="navbar-brand" href="/"><img src="/assets/img/mootrack_logo.jpeg" width="200"></a>
+        <div class="collapse navbar-collapse" id="navbarLightSupportedContent">
+            <ul class="navbar-nav ml-md-auto">
+                {% for item in site.data.navigation %}
+                <li class="nav-item dropdown">
+                    <a href="{{ item.link }}" class="nav-link">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item"><a class="btn btn-primary" href="#">Prueba Gratis</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
